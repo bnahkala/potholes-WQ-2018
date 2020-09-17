@@ -1,0 +1,39 @@
+---
+title: "Figure"
+author: "Brady Nahkala"
+date: "9/17/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Library
+
+```{r}
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(ggpubr)
+```
+
+# Input Data
+
+```{r}
+events <- read.csv(file = "./data/events.csv",  header=T, sep=",")
+events$Days <- factor(events$Days, levels=c("1 or less", "2", "3", "4", "5",
+                                            "6 to 9", "10 to 14", "15 to 19", "20+"))
+events2 <- events %>%
+  gather("Pothole", "Count", 2:12)
+```
+
+
+# Figure
+
+```{r, fig.width=7.1, fig.height=3.54}
+ggplot(events2, aes(x = Days, y=Count, fill=Pothole))+
+  geom_bar(stat="identity", position="dodge")+
+  theme_bw(base_size = 9)
+```
+

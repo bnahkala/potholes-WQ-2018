@@ -1,0 +1,30 @@
+---
+title: "Figure"
+author: "Brady Nahkala"
+date: "9/17/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Library
+
+```{r}
+
+```
+
+# Input Data
+
+```{r}
+
+```
+
+
+# Figure
+
+```{r}
+
+```
+
