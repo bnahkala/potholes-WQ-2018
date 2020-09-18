@@ -1,6 +1,7 @@
 "0","l <- ggplot(lettuce, aes())+"
 "0","  geom_point(aes(x = PercentSeason, y=PercentArea), color=""royalblue"")+"
 "0","  geom_point(aes(x=PercentSeason, y=DRP.mg.per.L/2), shape=18, size=2, color=""darkorange"")+"
+"0","  geom_smooth(method = ""lm"", aes(x=PercentSeason, y=DRP.mg.per.L/2), color=""darkorange"")+"
 "0","  theme_bw(base_size = 9)+"
 "0","  scale_y_continuous(sec.axis=sec_axis(~ .*2, name=""DRP (mg per L)""))+"
 "0","  labs("

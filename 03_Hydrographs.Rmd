@@ -16,6 +16,7 @@ library(tidyr)
 library(dplyr)
 library(ggplot2)
 library(ggpubr)
+library(RColorBrewer)
 ```
 
 # Input Data
@@ -33,6 +34,9 @@ levels <- levels %>%
 # Figure
 
 ```{r}
+
+mycolors <- colorRampPalette(brewer.pal(8, "Dark2"))(11)
+
 ggplot()+
   geom_point(data=levels, aes(Date, Depth, color=Pothole))+
   # geom_bar(data=precip, aes(Precipitation.cm))+
