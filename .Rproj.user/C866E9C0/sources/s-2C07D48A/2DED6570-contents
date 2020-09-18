@@ -1,0 +1,46 @@
+---
+title: "Figure"
+author: "Brady Nahkala"
+date: "9/17/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Library
+
+```{r, warning=F, message=F}
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(ggpubr)
+library(RColorBrewer)
+```
+
+# Input Data
+
+```{r}
+depths <- read.csv("./data/hydrograph.csv", header=T, sep=",")
+levels <- depths[ , c(1:11)]
+precip <- depths[ , c(1, 12)]
+
+levels <- levels %>%
+  gather(key="Pothole", value="Depth", 2:11)
+```
+
+
+# Figure
+
+```{r}
+
+mycolors <- colorRampPalette(brewer.pal(8, "Dark2"))(11)
+
+ggplot()+
+  geom_point(data=levels, aes(Date, Depth, color=Pothole))+
+  # geom_bar(data=precip, aes(Precipitation.cm))+
+  # scale_y_continuous(sec.axis = sec_axis(~.*5, name="Precipitation (cm)"))+
+  theme(axis.text.x = element_text(angle = 90))
+```
+

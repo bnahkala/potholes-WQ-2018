@@ -1,0 +1,6 @@
+"0","# ggplot(nutrients[nutrients$Nutrient == ""Ammonia"", ], aes(Season, Value))+"
+"0","  # geom_boxplot()"
+"0",""
+"0","ggplot(nutrients)+"
+"0","  geom_boxplot(aes(x=Season, y=Value))+"
+"0","  facet_wrap(~Nutrient, nrow=3, ncol=2)"
