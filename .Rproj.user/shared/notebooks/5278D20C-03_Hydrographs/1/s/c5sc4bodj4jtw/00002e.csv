@@ -1,5 +1,0 @@
-"0","ggplot()+"
-"0","  geom_point(data=levels, aes(Date, Depth, color=Pothole))+"
-"0","  # geom_bar(data=precip, aes(Precipitation.cm))+"
-"0","  # scale_y_continuous(sec.axis = sec_axis(~.*5, name=""Precipitation (cm)""))+"
-"0","  theme(axis.text.x = element_text(angle = 90))"

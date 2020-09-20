@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1600627456759.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1DBEF550",
+    "lastKnownWriteTime" : 1600396432,
+    "last_content_update" : 1600627456759,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "C38981F9",
+        "caption" : "levels",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=levels&cache_key=C38981F9",
+        "displayedObservations" : 1530,
+        "environment" : "",
+        "expression" : "levels",
+        "object" : "levels",
+        "preview" : 0,
+        "totalObservations" : 1530,
+        "variables" : 3
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
