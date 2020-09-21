@@ -5,7 +5,7 @@
 ![Flood Event Lengths for 2018 Growing Season](https://github.com/bnahkala/potholes-WQ-2018/blob/master/02_events.png)
 
 ## Hydrographs
-![Hydrograph and Precipitation Depths for 2018 Growing Season]()
+![Hydrograph and Precipitation Depths for 2018 Growing Season](https://github.com/bnahkala/potholes-WQ-2018/blob/master/03_Hydrographs.png)
 
 ## Nutrient Concentrations
 ![Observed Nutrient Concentrations in 2018 Growing Season](https://github.com/bnahkala/potholes-WQ-2018/blob/master/05_NutrientBoxplots.png)
