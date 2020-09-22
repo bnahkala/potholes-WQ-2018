@@ -42,7 +42,7 @@ mouth <- load.curve.m %>%
 b <- ggplot(bunny, aes())+
   geom_point(aes(x = PercentSeason, y=PercentArea), color="royalblue")+
   geom_point(aes(x=PercentSeason, y=DRP.mg.per.L), shape=18, size=2, color="darkorange")+
-  geom_hline(yintercept = 0.05, linetype="dashed")+
+  geom_hline(yintercept = 0.01, linetype="dashed")+
   theme_bw(base_size = 9)+
   scale_y_continuous(sec.axis=sec_axis(~ .*1, name="DRP (mg per L)"))+
   labs(
@@ -57,7 +57,7 @@ b
 l <- ggplot(lettuce, aes())+
   geom_point(aes(x = PercentSeason, y=PercentArea), color="royalblue")+
   geom_point(aes(x=PercentSeason, y=DRP.mg.per.L/2), shape=18, size=2, color="darkorange")+
-  geom_hline(yintercept = 0.05, linetype="dashed")+
+  geom_hline(yintercept = 0.01, linetype="dashed")+
   geom_smooth(method = "lm", aes(x=PercentSeason, y=DRP.mg.per.L/2), color="darkorange")+
   theme_bw(base_size = 9)+
   scale_y_continuous(sec.axis=sec_axis(~ .*2, name="DRP (mg per L)"))+
@@ -73,7 +73,7 @@ l
 m <- ggplot(mouth, aes())+
   geom_point(aes(x = PercentSeason, y=PercentArea), color="royalblue")+
   geom_point(aes(x=PercentSeason, y=DRP.mg.per.L/2), shape=18, size=2, color="darkorange")+
-  geom_hline(yintercept = 0.05, linetype="dashed")+
+  geom_hline(yintercept = 0.01, linetype="dashed")+
   theme_bw(base_size = 9)+
   scale_y_continuous(sec.axis=sec_axis(~ .*2, name="DRP (mg per L)"))+
   labs(
