@@ -90,7 +90,7 @@ m
 Fig4<- ggarrange(b, l, m, nrow=3,
           labels = c("Bunny", "Lettuce","Mouth"),
           font.label = list(size=9, face="plain"), 
-          hjust=c(-6.5, -5.5, -7.25), 
+          hjust=c(-6.5,-5.5,-6.75), 
           vjust=c(2))
 
 Fig4 <- annotate_figure(Fig4,
