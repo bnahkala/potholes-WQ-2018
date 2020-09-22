@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1600807806076.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3378307820",
+    "id" : "EB103C92",
+    "lastKnownWriteTime" : 1600807990,
+    "last_content_update" : 1600807990631,
+    "path" : "C:/github/potholes-WQ-2018/05_FirstDayNutrientC.Rmd",
+    "project_path" : "05_FirstDayNutrientC.Rmd",
+    "properties" : {
+        "cursorPosition" : "51,28",
+        "last_setup_crc32" : "F6BEA2E8bb338d19",
+        "scrollLine" : "56",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
