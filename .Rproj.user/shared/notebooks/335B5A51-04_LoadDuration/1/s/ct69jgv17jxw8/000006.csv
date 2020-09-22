@@ -6,7 +6,7 @@
 "0","  scale_y_continuous(sec.axis=sec_axis(~ .*1, name=""DRP (mg per L)""))+"
 "0","  labs("
 "0","    x=NULL,"
-"0","    y=""Fraction of Microwatershed Area"""
+"0","    y=NULL"
 "0","  )"
 "0","  "
 "0","b"
