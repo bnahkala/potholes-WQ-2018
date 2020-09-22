@@ -44,7 +44,7 @@ b <- ggplot(bunny, aes())+
   geom_point(aes(x=PercentSeason, y=DRP.mg.per.L), shape=18, size=2, color="darkorange")+
   geom_hline(yintercept = 0.01, linetype="dashed")+
   theme_bw(base_size = 9)+
-  scale_y_continuous(sec.axis=sec_axis(~ .*1, name="DRP (mg per L)"))+
+  scale_y_continuous(sec.axis=sec_axis(~ .*1, name=NULL))+
   labs(
     x=NULL,
     y=NULL
@@ -60,7 +60,7 @@ l <- ggplot(lettuce, aes())+
   geom_hline(yintercept = 0.01, linetype="dashed")+
   geom_smooth(method = "lm", aes(x=PercentSeason, y=DRP.mg.per.L/2), color="darkorange")+
   theme_bw(base_size = 9)+
-  scale_y_continuous(sec.axis=sec_axis(~ .*2, name="DRP (mg per L)"))+
+  scale_y_continuous(sec.axis=sec_axis(~ .*2, name=NULL))+
   labs(
     x=NULL,
     y=NULL
@@ -75,7 +75,7 @@ m <- ggplot(mouth, aes())+
   geom_point(aes(x=PercentSeason, y=DRP.mg.per.L/2), shape=18, size=2, color="darkorange")+
   geom_hline(yintercept = 0.01, linetype="dashed")+
   theme_bw(base_size = 9)+
-  scale_y_continuous(sec.axis=sec_axis(~ .*2, name="DRP (mg per L)"))+
+  scale_y_continuous(sec.axis=sec_axis(~ .*2, name=NULL))+
   labs(
     x="Fraction of Growing Season",
     y=NULL
@@ -90,11 +90,12 @@ m
 Fig4<- ggarrange(b, l, m, nrow=3,
           labels = c("Bunny", "Lettuce","Mouth"),
           font.label = list(size=9, face="plain"), 
-          hjust=c(-7, -6, -7.25), 
+          hjust=c(-6.5, -5.5, -7.25), 
           vjust=c(2))
 
 Fig4 <- annotate_figure(Fig4,
-                left = text_grob("Fraction of Microwatershed Area", rot = 90, size = 9)
+                left = text_grob("Fraction of Microwatershed Area", rot = 90, size = 9),
+                right = text_grob("DRP (mg/L)", rot = -90, size = 9)
         )
 
 Fig4

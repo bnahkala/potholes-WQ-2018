@@ -3,7 +3,7 @@
 "0","  geom_point(aes(x=PercentSeason, y=DRP.mg.per.L), shape=18, size=2, color=""darkorange"")+"
 "0","  geom_hline(yintercept = 0.01, linetype=""dashed"")+"
 "0","  theme_bw(base_size = 9)+"
-"0","  scale_y_continuous(sec.axis=sec_axis(~ .*1, name=""DRP (mg per L)""))+"
+"0","  scale_y_continuous(sec.axis=sec_axis(~ .*1, name=NULL))+"
 "0","  labs("
 "0","    x=NULL,"
 "0","    y=NULL"
