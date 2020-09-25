@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601039183361.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "57286EDD",
+    "lastKnownWriteTime" : 1601043507,
+    "last_content_update" : 1601043507985,
+    "path" : "C:/github/potholes-WQ-2018/03_Hydrographs.Rmd",
+    "project_path" : "03_Hydrographs.Rmd",
+    "properties" : {
+        "cursorPosition" : "104,9",
+        "last_setup_crc32" : "EB00C413bb338d19",
+        "scrollLine" : "94",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
