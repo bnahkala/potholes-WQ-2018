@@ -20,7 +20,7 @@ library(RColorBrewer)
 library(lubridate)
 library(EcoHydRology)
 
-source("hydrograph.R")
+source("./hydrograph.R")
 ```
 
 # Input Data
