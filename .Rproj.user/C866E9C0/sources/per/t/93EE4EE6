@@ -14,13 +14,13 @@
     "properties" : {
         "cursorPosition" : "60,4",
         "last_setup_crc32" : "",
-        "scrollLine" : "16",
+        "scrollLine" : "0",
         "tempName" : "Untitled1"
     },
     "read_only" : false,
     "read_only_alternatives" : [
     ],
-    "relative_order" : 1,
+    "relative_order" : 4,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_markdown"

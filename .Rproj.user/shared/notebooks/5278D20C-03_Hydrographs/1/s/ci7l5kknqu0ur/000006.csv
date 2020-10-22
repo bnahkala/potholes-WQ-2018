@@ -7,5 +7,5 @@
 "0","levels <- depths[ , c(1:11)]"
 "0","precip <- depths[ , c(1, 12)]"
 "0",""
-"0","levels <- levels %>%"
-"0","  gather(key=""Pothole"", value=""Depth"", 2:11)"
+"0","# levels <- levels %>%"
+"0","  # gather(key=""Pothole"", value=""Depth"", 2:11)"

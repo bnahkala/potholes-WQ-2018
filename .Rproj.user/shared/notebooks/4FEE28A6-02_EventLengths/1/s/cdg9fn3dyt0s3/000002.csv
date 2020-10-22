@@ -3,7 +3,7 @@
 "0",""
 "0","Fig2 <- ggplot(events2, aes(x = Days, y=Count, fill=Pothole))+"
 "0","  geom_bar(stat=""identity"", position=""dodge"", alpha=0.75)+"
-"0","  theme_bw(base_size = 9)+"
+"0","  theme_bw(base_size = 11)+"
 "0","  scale_fill_manual(values=mycolors)+"
 "0","  labs("
 "0","    x=""Length of Event (days)"","

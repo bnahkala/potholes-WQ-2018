@@ -147,7 +147,7 @@ hydrograph2 <-
     axis(side = 1, at = seq(1, (endindex - begin + 1), length = 14), 
          pos = 0, labels = format(timeSeries[seq(begin, endindex, 
                                                  length = 14)], "%d-%b-%y"))
-    legend("bottomright", inset = c(0.05, 0.475),legend=c(labs), col=c(mycolors), lty=1, cex=0.5)
+    legend("bottomright", inset = c(0.05, 0.47),legend=c(labs), col=c(mycolors), lty=1, cex=0.55)
     
     
     axis(side = 2, pos = 0)

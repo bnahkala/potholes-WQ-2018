@@ -42,7 +42,7 @@ mycolors <- colorRampPalette(brewer.pal(8, "Dark2"))(11)
 
 Fig2 <- ggplot(events2, aes(x = Days, y=Count, fill=Pothole))+
   geom_bar(stat="identity", position="dodge", alpha=0.75)+
-  theme_bw(base_size = 9)+
+  theme_bw(base_size = 11)+
   scale_fill_manual(values=mycolors)+
   labs(
     x="Length of Event (days)",

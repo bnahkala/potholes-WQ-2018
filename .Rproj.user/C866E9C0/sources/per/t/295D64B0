@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1603379588155.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "295D64B0",
+    "lastKnownWriteTime" : 1642950259032,
+    "last_content_update" : 1603379588155,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "121DE67A",
+        "caption" : "lettuce",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=lettuce&cache_key=121DE67A",
+        "displayedObservations" : 2904,
+        "environment" : "",
+        "expression" : "lettuce",
+        "object" : "lettuce",
+        "preview" : 0,
+        "totalObservations" : 2904,
+        "variables" : 3
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
