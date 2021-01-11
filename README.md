@@ -1,5 +1,5 @@
 # potholes-WQ-2018
- Figure scripts for research brief intended for Trans. ASABE, focusing on 2018 WQ data in prairie potholes.
+Nahkala, B.A., Kaleita, A.L., Soupir, M.L., and VanLoocke, A. Prairie Pothole Management Support Tool: Application of random forest and R Shiny for evaluating prairie pothole flood risk. Journal of Environmental Quality. In Review. 
 
 ## Flood Events
 ![Flood Event Lengths for 2018 Growing Season](https://github.com/bnahkala/potholes-WQ-2018/blob/master/02_events.png)
