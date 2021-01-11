@@ -1,6 +1,5 @@
 # Prairie Pothole Water Quality in a Wet Year
-Nahkala, B.A., Kaleita, A.L., Soupir, M.L., and VanLoocke, A. Prairie Pothole Management Support Tool: Application of random forest and R Shiny for evaluating prairie pothole flood risk. Journal of Environmental Quality. In Review. 
-
+Rempe, I., Nahkala, B.A., Kaleita, A.L., and Soupir, M.L. Inundation and nutrient assessment of farmed prairie potholes during a cropping season with high precipitation. Trans. ASABE. In Review. 
 ## Flood Events
 ![Flood Event Lengths for 2018 Growing Season](https://github.com/bnahkala/potholes-WQ-2018/blob/master/02_events.png)
 
