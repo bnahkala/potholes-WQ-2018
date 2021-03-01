@@ -1,0 +1,24 @@
+{
+    "id": "86DDE25F",
+    "path": "C:/github/potholes-WQ-2018/hydrograph.R",
+    "project_path": "hydrograph.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1614447957896.0,
+    "source_on_save": false,
+    "relative_order": 7,
+    "properties": {
+        "cursorPosition": "93,59",
+        "scrollLine": "56"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1614562513,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1614562513867,
+    "read_only": false,
+    "read_only_alternatives": []
+}

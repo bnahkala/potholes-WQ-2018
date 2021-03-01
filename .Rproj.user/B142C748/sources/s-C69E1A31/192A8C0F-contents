@@ -1,0 +1,110 @@
+---
+title: "Figure"
+author: "Brady Nahkala"
+date: "9/17/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Library
+
+```{r}
+library(tidyr)
+library(dplyr)
+library(plyr)
+library(ggplot2)
+library(ggpubr)
+```
+
+# Input Data
+
+```{r}
+load.curve.b <- read.csv("./data/Bunny_LoadDuration.csv", header=T, sep=",")
+bunny <- load.curve.b %>%
+  filter(PercentSeason <= 0.8)
+
+load.curve.l <- read.csv("./data/Lettuce_LoadDuration.csv", header=T, sep=",")
+lettuce <- load.curve.l %>%
+  filter(PercentSeason <= 0.8)
+
+load.curve.m <- read.csv("./data/Mouth_LoadDuration.csv", header=T, sep=",")
+mouth <- load.curve.m %>%
+  filter(PercentSeason <= 0.8)
+
+```
+
+
+# Figure
+
+```{r, fig.width=3.54, fig.height=3.54}
+b <- ggplot(bunny, aes())+
+  geom_point(aes(x = PercentSeason, y=PercentArea), color="royalblue")+
+  geom_point(aes(x=PercentSeason, y=DRP.mg.per.L), shape=18, size=2, color="darkorange")+
+  geom_hline(yintercept = 0.01, linetype="dashed")+
+  theme_bw(base_size = 11)+
+  scale_y_continuous(sec.axis=sec_axis(~ .*1, name=NULL))+
+  labs(
+    x=NULL,
+    y=NULL
+  )
+  
+b
+```
+
+```{r, fig.width=3.54, fig.height=3.54}
+l <- ggplot(lettuce, aes())+
+  geom_point(aes(x = PercentSeason, y=PercentArea), color="royalblue")+
+  geom_point(aes(x=PercentSeason, y=DRP.mg.per.L/2), shape=18, size=2, color="darkorange")+
+  geom_hline(yintercept = 0.01, linetype="dashed")+
+  geom_smooth(method = "lm", aes(x=PercentSeason, y=DRP.mg.per.L/2), color="darkorange")+
+  theme_bw(base_size = 11)+
+  scale_y_continuous(sec.axis=sec_axis(~ .*2, name=NULL))+
+  labs(
+    x=NULL,
+    y=NULL
+  )
+
+l
+```
+
+```{r, fig.width=3.54, fig.height=3.54}
+m <- ggplot(mouth, aes())+
+  geom_point(aes(x = PercentSeason, y=PercentArea), color="royalblue")+
+  geom_point(aes(x=PercentSeason, y=DRP.mg.per.L/2), shape=18, size=2, color="darkorange")+
+  geom_hline(yintercept = 0.01, linetype="dashed")+
+  theme_bw(base_size = 11)+
+  scale_y_continuous(sec.axis=sec_axis(~ .*2, name=NULL))+
+  labs(
+    x="Fraction of Growing Season",
+    y=NULL
+  )
+
+m
+```
+
+# Combined Figure
+
+```{r, fig.width=3.54, fig.height=8.5}
+Fig4<- ggarrange(b, l, m, nrow=3,
+          labels = c("Bunny", "Lettuce","Mouth"),
+          font.label = list(size=11, face="plain"), 
+          hjust=c(-5,-4.25,-5.25), 
+          vjust=c(2))
+
+Fig4 <- annotate_figure(Fig4,
+                left = text_grob("Fraction of Microwatershed Area", rot = 90, size = 11),
+                right = text_grob("DRP (mg/L)", rot = -90, size = 11)
+        )
+
+Fig4
+```
+
+```{r}
+png("04_LoadDuration.png", width = 90, height=215, units="mm", res=300)
+Fig4
+dev.off()
+```
+

@@ -1,0 +1,32 @@
+{
+    "id": "54411859",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1614564546988.0,
+    "source_on_save": false,
+    "relative_order": 8,
+    "properties": {
+        "expression": "events5",
+        "caption": "events5",
+        "totalObservations": 126,
+        "displayedObservations": 126,
+        "variables": 2,
+        "cacheKey": "C3FA7AAF",
+        "object": "events5",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=events5&cache_key=C3FA7AAF&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 8028915825109399922,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1614564546988,
+    "read_only": false,
+    "read_only_alternatives": []
+}

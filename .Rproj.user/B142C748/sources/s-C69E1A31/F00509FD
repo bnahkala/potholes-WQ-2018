@@ -1,0 +1,32 @@
+{
+    "id": "F00509FD",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1614450176529.0,
+    "source_on_save": false,
+    "relative_order": 7,
+    "properties": {
+        "expression": "events",
+        "caption": "events",
+        "totalObservations": 10,
+        "displayedObservations": 10,
+        "variables": 11,
+        "cacheKey": "F8275C17",
+        "object": "events",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=events&cache_key=F8275C17&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 2459013982189675876,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1614450176529,
+    "read_only": false,
+    "read_only_alternatives": []
+}
